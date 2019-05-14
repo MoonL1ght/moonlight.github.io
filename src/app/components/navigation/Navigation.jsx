@@ -46,8 +46,8 @@ class Navigation extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Moonlight's blog</NavbarBrand>
+        <Navbar color="dark" dark expand="md" className='mb-navbar-custom'>
+          <NavbarBrand href="/" className="mb-navbar-brand">MOONL1GHT'S BLOG</NavbarBrand>
           <Nav className="ml-auto" navbar>
             <LinkContainer to={`${this.props.url}${pages.about_page}`}>
               <NavLink>About</NavLink>
