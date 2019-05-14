@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Navigation from './components/navigation/Navigation.jsx';
 import About from './components/about/About.jsx';
+import Contacts from './components/contacts/Contacts.jsx';
 // import Learn from './components/learn/Learn.jsx';
 
 import {HashRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
@@ -45,6 +46,9 @@ const MainAppWindow = ({match}) => (
     <Switch>
       <Route path={`${match.url}about`}>
         {Component(<About/>)}
+      </Route>
+      <Route path={`${match.url}contacts`}>
+        {Component(<Contacts/>)}
       </Route>
       {/* <Route path={`${match.url}learn`}>
         {Component(<Learn/>)}

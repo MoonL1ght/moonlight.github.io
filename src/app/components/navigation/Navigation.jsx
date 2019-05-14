@@ -16,7 +16,8 @@ import {LinkContainer} from 'react-router-bootstrap';
 import './navigation.css';
 
 const pages = {
-  about_page: 'about'
+  about_page: 'about',
+  contacts_page: 'contacts'
   // words_page: 'words',
   // learn_page: 'learn'
 };
@@ -50,6 +51,9 @@ class Navigation extends React.Component {
           <Nav className="ml-auto" navbar>
             <LinkContainer to={`${this.props.url}${pages.about_page}`}>
               <NavLink>About</NavLink>
+            </LinkContainer>
+            <LinkContainer to={`${this.props.url}${pages.contacts_page}`}>
+              <NavLink>Contacts</NavLink>
             </LinkContainer>
             {/* <LinkContainer to={`${this.props.url}${pages.learn_page}`}>
               <NavLink>Learn</NavLink>
