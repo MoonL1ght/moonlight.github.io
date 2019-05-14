@@ -1,8 +1,43 @@
 body {
-  overflow: hidden;
-  font: Helvetica, sans-serif;
+  /* overflow: hidden; */
+  font-family: 'Libre Franklin', Helvetica, sans-serif;
 }
 
 input::-ms-clear {
   display: none;
+}
+
+.mb-flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@font-face {
+  font-family: 'InriaSerif';
+  src: url('../fonts/InriaSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InriaSerif';
+  src: url('/fonts/InriaSerif-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'InriaSerif';
+  src: url('/fonts/InriaSerif-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InriaSerif';
+  src: url('/fonts/InriaSerif-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
 }
