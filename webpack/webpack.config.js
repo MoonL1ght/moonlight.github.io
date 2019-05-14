@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 const path = require('path');
 
-const BUILD_DIR   = path.join(__dirname, './'),
+const BUILD_DIR   = path.join(__dirname, '../'),
       CLIENT_DIR = path.join(__dirname, '../src');
 
 module.exports = {
