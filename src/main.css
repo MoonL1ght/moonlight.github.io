@@ -1,0 +1,8 @@
+body {
+  overflow: hidden;
+  font: Helvetica, sans-serif;
+}
+
+input::-ms-clear {
+  display: none;
+}

@@ -1,0 +1,16 @@
+.MON-nav-custom {
+  border-radius: 0px !important;
+  background-color: #18212c !important;
+}
+
+.MON-NavbarBrand {
+  color: white !important;
+}
+
+.navbar-nav > .active > a {
+  background-color: #0e1319 !important;
+}
+
+.container {
+  width: 100% !important;
+}

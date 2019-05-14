@@ -1,0 +1,70 @@
+import * as React from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
+
+import {LinkContainer} from 'react-router-bootstrap';
+import './navigation.css';
+
+const pages = {
+  about_page: 'about'
+  // words_page: 'words',
+  // learn_page: 'learn'
+};
+
+class Navigation extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+      active: pages.page1,
+    }
+  }
+
+  handleSelect(key) {
+    this.setState({active: key});
+  }
+
+  // logout() {
+  //   let logout = confirm('Закончить сессию и выйти?')
+  //   if (logout) {
+  //     window.location.href = '/logout';
+  //     localStorage.clear();
+  //   }
+  // }
+
+  render() {
+    return (
+      <div>
+        <Navbar color="light" light expand="md">
+          <NavbarBrand href="/">Moonlight's blog</NavbarBrand>
+          <Nav className="ml-auto" navbar>
+            <LinkContainer to={`${this.props.url}${pages.about_page}`}>
+              <NavLink>About</NavLink>
+            </LinkContainer>
+            {/* <LinkContainer to={`${this.props.url}${pages.learn_page}`}>
+              <NavLink>Learn</NavLink>
+            </LinkContainer> */}
+            {/* <NavItem>
+              <NavLink href={`${this.props.url}${pages.page1}`}>Words</NavLink>
+            </NavItem> */}
+            {/* <NavItem>
+              <NavLink href={`/${pages.learn_page}`}>Learn</NavLink>
+            </NavItem> */}
+          </Nav>
+        </Navbar>
+      </div>
+    );
+  }
+}
+
+export default Navigation;
