@@ -1,21 +1,39 @@
 .mb-main {
   font-size: 20;
-  background-color: grey;
-  /* width: 100px; */
-  /* overflow-y: scroll;
-  height: 100%;
-  width: 100%; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  /* height: 100%; */
+  height: auto;
+  min-height: 90vh;
 }
 
 .mb-main-title {
-  background-color: aquamarine;
-  font-family: 'InriaSerif';
-  /* text-align: center; */
-  /* margin-top: 40px; */
-  /* width: 100px; */
-  /* height: 150px; */
+  /* background-color: aquamarine; */
+  font-family: 'InriaSerif', '';
+  margin-top: 100px;
+}
+
+.mb-main-title-welcome {
+  font-size: 140px;
+  text-align: center;
+  margin-top: -10px;
+  /* font-weight: bold; */
+}
+
+.mb-main-title-info {
+  text-align: center;
+  font-size: 80px;
+  /* background-color: red; */
+  margin-top: -60px;
+}
+
+.mb-main-title-line {
+  width: 700px;
+  height: 2px;
+  background: rgba(77,77,77,0.5);
+  background: -moz-linear-gradient(left, rgba(77,77,77,0.5) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%, rgba(77,77,77,0.5) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(77,77,77,0.5)), color-stop(50%, rgba(0,0,0,0.5)), color-stop(50%, rgba(0,0,0,0.5)), color-stop(100%, rgba(77,77,77,0.5)));
+  background: -webkit-linear-gradient(left, rgba(77,77,77,0.5) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%, rgba(77,77,77,0.5) 100%);
+  background: -o-linear-gradient(left, rgba(77,77,77,0.5) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%, rgba(77,77,77,0.5) 100%);
+  background: -ms-linear-gradient(left, rgba(77,77,77,0.5) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%, rgba(77,77,77,0.5) 100%);
+  background: linear-gradient(to right, rgba(77,77,77,0.5) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%, rgba(77,77,77,0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d4d4d', endColorstr='#4d4d4d', GradientType=1 );
 }

@@ -1,13 +1,17 @@
 .mb-footer-line {
-  width: 100px;
-  height: 10px;
+  width: 100%;
+  height: 1px;
+  opacity: 0.2;
   background-color: black;
 }
 
 .mb-footer {
+  /* flex: 1; */
+  margin-top: auto;
   width: 80%;
   /* height: 100px; */
-  background-color: coral;
+  /* flex-shrink: 0; */
+  /* background-color: coral; */
 }
 
 .mb-footer-text {

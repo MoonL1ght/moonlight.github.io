@@ -17,10 +17,10 @@ class Footer extends React.Component {
   
   render() {
     return(
-      <div className='mb-flex-col mb-footer'>
+      <footer className='mb-flex-col mb-footer'>
         <div className='mb-footer-line'></div>
         <div className='mb-footer-text'>{this.state.text}</div>
-      </div>
+      </footer>
     );
   }
 }
