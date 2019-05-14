@@ -1,0 +1,16 @@
+.mb-footer-line {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+}
+
+.mb-footer {
+  width: 80%;
+  /* height: 100px; */
+  background-color: coral;
+}
+
+.mb-footer-text {
+  padding: 10px;
+  /* margin-top: -10px; */
+}
