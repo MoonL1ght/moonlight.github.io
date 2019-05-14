@@ -1,12 +1,9 @@
 {
-  "name": "moonlight.github.io",
-  "version": "0.0.1",
-  "description": "moonlight's blog",
-  "main": "index.js",
-  "homepage": "https://github.com/MoonL1ght/moonlight.github.io",
+  "name": "moonl1ght.github.io",
+  "version": "0.0.3",
+  "description": "moonl1ght's blog",
+  "homepage": "https://moonl1ght.github.io",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "better-npm-run build:prod",
     "dev": "better-npm-run dev",
     "__build:prod": "webpack --config ./webpack/webpack.prod.config.js --progress",
@@ -30,7 +27,7 @@
     "node": ">=10.15.3",
     "npm": ">=6.4.1"
   },
-  "author": "moonlight",
+  "author": "moonl1ght",
   "license": "Apache",
   "dependencies": {
     "axios": "^0.18.0",
@@ -42,8 +39,7 @@
     "react-router-bootstrap": "^0.24.4",
     "react-router-dom": "^4.3.1",
     "reactstrap": "^7.1.0",
-    "redux": "^4.0.1",
-    "gh-pages": "^2.0.1"
+    "redux": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -68,6 +64,7 @@
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
     "webpack-dev-middleware": "^3.5.1",
-    "webpack-hot-middleware": "^2.24.3"
+    "webpack-hot-middleware": "^2.24.3",
+    "base-href-webpack-plugin": "^2.0.0"
   }
 }

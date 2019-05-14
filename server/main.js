@@ -5,8 +5,6 @@ const path = require('path'),
       serverConfig = require('./server.config.js')
 
 const app = express(),
-      DIST_DIR = baseConfig.output.path,
-      HTML_FILE= path.join(DIST_DIR, 'index.html'),
       PORT = serverConfig.PORT,
       MODE = process.env.NODE_ENV,
       isDevelopment = MODE == 'development'
@@ -20,9 +18,6 @@ if (isDevelopment) {
   app.use(webpackDevMiddleware(compiler, {publicPath: config.output.publicPath,
     historyApiFallback: true}))
   app.use(webpackHotMiddleware(compiler))
-  app.get(/.*/, (req, res) => {
-    res.sendFile(HTML_FILE)
-  })
 } else {
   console.log('Hot reload server can only run in DEV mode!')
   process.exit(1);
