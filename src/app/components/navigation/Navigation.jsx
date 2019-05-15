@@ -50,10 +50,10 @@ class Navigation extends React.Component {
           <NavbarBrand href="/" className="mb-navbar-brand">MOONL1GHT'S BLOG</NavbarBrand>
           <Nav className="ml-auto" navbar>
             <LinkContainer to={`${this.props.url}${pages.about_page}`}>
-              <NavLink>About</NavLink>
+              <NavLink className='mb-navlink-custom'>About</NavLink>
             </LinkContainer>
             <LinkContainer to={`${this.props.url}${pages.contacts_page}`}>
-              <NavLink>Contacts</NavLink>
+              <NavLink className='mb-navlink-custom'>Contacts</NavLink>
             </LinkContainer>
             {/* <LinkContainer to={`${this.props.url}${pages.learn_page}`}>
               <NavLink>Learn</NavLink>

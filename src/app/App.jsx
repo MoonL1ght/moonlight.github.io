@@ -59,8 +59,8 @@ const MainAppWindow = ({match}) => (
 // MB - stands for Moonlight Blog
 const Component = (component) => {
   return (
-    <div className='mb-main-container'>
-      {component}
+    <div className='mb-app-container'>
+      <div style={{'margin-top': '56px'}}>{component}</div>
     </div>
   );
 };

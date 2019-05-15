@@ -2,6 +2,7 @@ import * as React from 'react';
 import './footer.css';
 
 class Footer extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -9,12 +10,6 @@ class Footer extends React.Component {
     };
   }
 
- 
-  resize() {
-    
-  }
-
-  
   render() {
     return(
       <footer className='mb-flex-col mb-footer'>
@@ -23,6 +18,7 @@ class Footer extends React.Component {
       </footer>
     );
   }
+
 }
 
 export default Footer;

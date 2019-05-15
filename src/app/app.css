@@ -1,1 +1,5 @@
-.mb-main-container {}
+.mb-app-container {
+  margin-top: -56px;
+  max-height: 100vh;
+  overflow: auto !important;
+}
