@@ -1,13 +1,13 @@
 {
   "name": "moonl1ght.github.io",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "moonl1ght's blog",
   "homepage": "https://moonl1ght.github.io",
   "scripts": {
     "build": "better-npm-run build:prod",
     "dev": "better-npm-run dev",
     "__build:prod": "webpack --config ./webpack/webpack.prod.config.js --progress",
-    "clean": "rimraf *.js && rimraf *.css && rimraf *.html"
+    "clean": "rimraf *.js && rimraf *.css && rimraf *.html && rimraf *.ttf"
   },
   "betterScripts": {
     "build:prod": {

@@ -1,6 +1,7 @@
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
   font-family: 'Libre Franklin', Helvetica, sans-serif;
+  background-color: #f2f2f2;
 }
 
 input::-ms-clear {

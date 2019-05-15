@@ -1,8 +1,17 @@
 .mb-navbar-custom{
-  opacity: 0.8 !important;
+  /* opacity: 0.8 !important; */
+  background-color: white;
 }
 
 .mb-navbar-brand {
   font-weight: 900;
-  font-style: italic;
+  /* font-style: italic; */
+}
+
+.mb-navlink-custom {
+  color: black !important;
+  font-weight: bold;
+}
+.mb-navlink-custom:hover {
+  color: rgb(236, 59, 59) !important;
 }
